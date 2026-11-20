@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>My Portofolio</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h3>Jarrs_ap</h3>
+        <ul class="desktop-nav">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang saya</a></li>
+            <li><a href="#hobbies">Minat & Hobi</a></li>
+            <li><a href="#Project">Proyek</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <details class="mobile-menu">
+            <summary aria-label="Buka menu navigasi">
+                <img src="Assets/menu.png" alt="">
+            </summary>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang saya</a></li>
+                <li><a href="#hobbies">Minat & Hobi</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </details>
+    </div>
+    <hr>
+    <audio id="background-music" src="Assets/TULUS - Monokrom (Official Music Video).mp3" loop preload="auto"></audio>
+    <div class="music-control-row">
+        <button class="music-toggle" type="button" aria-label="Putar musik" title="Putar musik">
+            <img src="Assets/volume-down.png" alt="">
+        </button>
+    </div>
+    <div class="container">
+        <section id="home">
+            <div class="aBout">
+                <h2>Hai semua 👋, Namaku</h2>
+                <h1>Muhamad Fajar Ananda Pratama</h1>
+                <h4>IT programmer <a href="https://www.smktelkom-bjb.sch.id/web/">SMK Telkom Banjarbaru</a></h4>
+                <p>Website ini akan menampilkan project dan kontribusi saya dalam bidang IT & Teknologi</p>
+                <li><a href="#contact">Hubungi saya</a></li>
+            </div>
+            <img class="hero-photo" src="Assets/foto-profil.jpeg" alt="Foto Muhamad Fajar Ananda Pratama">
+        </section>
+
+        <div class="tentang">
+            <section id="about">
+
+                <h1>Tentang saya</h1>
+
+                <div class="about-grid">
+
+                    <div class="item">
+                        <h2>01. Profil Singkat</h2>
+                        <h3>Mengenal Saya</h3>
+                        <p>Halo, saya Muhamad Fajar Ananda Pratama, seorang siswa IT di SMK Telkom Banjarbaru yang memiliki ketertarikan besar terhadap dunia teknologi dan pengembangan digital.</p>
+                        <p>Saya senang mengeksplorasi berbagai hal, mulai dari pemrograman, pengembangan website, hingga desain digital. Bagi saya, setiap proyek merupakan kesempatan untuk mempelajari sesuatu yang baru dan mengembangkan kemampuan.</p>
+                    </div>
+
+                    <div class="item">
+                        <h2>02. Keahlian & Teknologi</h2>
+                        <h3>Hal yang Saya Tekuni</h3>
+                        <p>Saya terus mengembangkan kemampuan di berbagai bidang teknologi, khususnya:</p>
+                        <ul>
+                            <li><strong>Web Development</strong> — Membangun dan mengembangkan website.</li>
+                            <li><strong>UI/UX Design</strong> — Merancang antarmuka dan pengalaman pengguna.</li>
+                            <li><strong>Programming</strong> — Mempelajari logika dan implementasi pemrograman.</li>
+                            <li><strong>Digital Design</strong> — Membuat desain visual dan produk digital.</li>
+                            <li><strong>Game Development</strong> — Mengeksplorasi pengembangan game dan interaksi digital.</li>
+                            <li><strong>Prompt Engineering</strong> — Sedang mempelajari cara menyusun prompt yang efektif.</li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <h2>03. Minat & Kreativitas</h2>
+                        <h3>Lebih dari Sekadar Teknologi</h3>
+                        <p>Ketertarikan saya tidak terbatas pada pemrograman. Saya juga memiliki minat dalam fotografi, desain grafis, dan dunia kreatif digital.</p>
+                        <p>Melalui Jarrs Studio, saya mengeksplorasi fotografi dan pengembangan produk digital. Saya juga tertarik menciptakan pengalaman interaktif melalui pengembangan game.</p>
+                        <p>Saya percaya bahwa kreativitas dan teknologi dapat berjalan berdampingan untuk menghasilkan sesuatu yang bermakna.</p>
+                    </div>
+
+                    <div class="item">
+                        <h2>04. Visi & Prinsip</h2>
+                        <h3>Terus Belajar, Terus Berkarya</h3>
+                        <p>Saya percaya bahwa kemampuan tidak terbentuk hanya dari teori, melainkan melalui proses mencoba, mengalami kegagalan, dan terus memperbaiki diri.</p>
+                        <p>Saya ingin terus mengembangkan kemampuan di bidang teknologi, menghasilkan karya yang bermanfaat, serta membangun sesuatu yang memiliki identitas dan nilai tersendiri.</p>
+                        <p>Bagi saya, setiap ide memiliki potensi untuk diwujudkan. Yang dibutuhkan hanyalah keberanian untuk memulainya.</p>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <section id="hobbies" aria-labelledby="hobbies-title">
+            <div class="hobbies-heading">
+                <p>Di luar dunia teknologi</p>
+                <h1 id="hobbies-title">Minat dan Hobi</h1>
+            </div>
+            <article class="hobby-card">
+                <div class="hobby-card-copy">
+                    <h2>Fotografi</h2>
+                    <p>Mengabadikan momen dan melihat cerita dari sudut pandang yang berbeda.</p>
+                    <p class="hobby-more">Minat lainnya: desain grafis dan pengembangan game.</p>
+                </div>
+                <div class="photo-carousel" aria-label="Galeri fotografi">
+                    <button class="photo-carousel-button" type="button" aria-label="Foto sebelumnya" data-photo-direction="-1">
+                        <img class="photo-carousel-arrow is-previous" src="Assets/arrow-down-white.png" alt="">
+                    </button>
+                    <figure class="photo-carousel-slide" aria-live="polite">
+                        <img src="Assets/南カリマンタン_page-0002.jpg" alt="Foto fotografi, halaman 2">
+                        <figcaption class="photo-carousel-count">1 / 5</figcaption>
+                    </figure>
+                    <button class="photo-carousel-button" type="button" aria-label="Foto berikutnya" data-photo-direction="1">
+                        <img class="photo-carousel-arrow is-next" src="Assets/arrow-down-white.png" alt="">
+                    </button>
+                </div>
+            </article>
+            <article class="hobby-card graphic-design-card">
+                <div class="hobby-card-copy">
+                    <h2>Desain Grafis</h2>
+                </div>
+                <img class="graphic-design-poster" src="Assets/PKN 2.png" alt="Poster PKN 2 bertema Vive la Démocratie">
+                <p class="graphic-design-description">Poster bertema demokrasi dengan judul “Vive la Démocratie” (Hidup Demokrasi). Perpaduan warna merah dan ilustrasi keadilan menggambarkan pentingnya nilai demokrasi.</p>
+            </article>
+        </section>
+
+        <div class="project">
+            <section id="Project">
+                <h3>Portofolio</h3>
+                <h1>Proyek</h1>
+            </section>
+
+            <div class="gambar">
+                <div class="gambar-grid">
+                    <div class="gambaR">
+                        <span>
+                            <h1>Brother - Bot</h1>
+                            <div class="brother-bot-images">
+                                <img src="Assets/brother-bot-posts.png" alt="Daftar posting dan notifikasi dari BROTHER - Bot di Discord">
+                                <img src="Assets/brother-bot-profile.png" alt="Profil aplikasi BROTHER - Bot di Discord">
+                            </div>
+                            <p>Bot Discord untuk server 3 BROTHER GAMING, menampilkan posting dan notifikasi video baru.</p>
+                    </div>
+                    <div class="gambaR">
+                        <span>
+                            <h1><span>Website Preset Lightroom</span> (Jarrs-Studio)</h1>
+                            <img src="Assets/bagus.PNG" alt="Web1">
+                            <p>Galeri semua preset Lightroom yang tersedia di Jarrs Studio.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pendidikan">
+            <section id="education">
+                    <h1>Riwayat Pendidikan & Bootcamp</h1>
+                    <p>Sedang dan pernah belajar ditempat berikut</p>
+                    <div class="school">
+                       <a href="https://www.smktelkom-bjb.sch.id/web/"> <img class="tombol" src="Assets/c5f68155-6a82-4784-a10c-ea8996306431_980x980.png" alt="Telkom"></a>
+                      
+            </section>
+        </div>
+
+        <div class="pengalaman">
+            <section id="experience">
+                <h1>Pengalaman kerja, Freelance, dan Magang</h1>
+                <p>Pernah bekerja dan sedang bekerja ditempat berikut:</p>
+                <div class="kerja">
+                    <a href="#"><img class="op" src="Assets/logo.png" alt="Logo Perusahaan"></a>
+                </div>
+            </section>
+        </div>
+
+
+
+    </div>
+    <footer id="contact">
+        <div class="footer-card">
+            <div class="io">
+                <div class="hubungi">
+                    <h1>Muhamad Fajar Ananda Pratama</h1>
+                    <h2>Hubungi Saya</h2>
+                    <p>manandapratama04@gmail.com</p>
+                    <p>Banjarbaru, Kalimantan Selatan</p>
+                    <ul class="sosmed">
+                        <li><a href="https://wa.me/6281558542225"><img src="Assets/whatsapp.png" alt="WhatsApp"></a></li>
+                        <li><a href="https://www.youtube.com/@jarrs_ap"><img src="Assets/youtube.png" alt="YouTube"></a></li>
+                        <li><a href="https://www.instagram.com/jarrs_ap/"><img src="Assets/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://github.com/Jarrsap01"><img src="Assets/github.png" alt="GitHub"></a></li>
+                        <li><a href="https://linktr.ee/jarrs_ap" target="_blank" rel="noopener noreferrer" aria-label="Linktree"><img class="linktree-icon" src="Assets/linktr-ee-logo-removebg-preview.png" alt="Linktree"></a></li>
+                    </ul>
+                </div>
+
+                <div class="kategori">
+                    <h1>Kategori Tulisan</h1>
+                    <section id="programming"><a href="#home"><p>Programming</p></a></section>
+                    <section id="Teknologi"><a href="#home"><p>Teknologi</p></a></section>
+                    <section><a href="#hobbies"><p>Hobby</p></a></section>
+                </div>
+
+                <div class="tautan">
+                    <h1>Tautan</h1>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang saya</a></li>
+                        <li><a href="#hobbies">Minat dan Hobi</a></li>
+                        <li><a href="#Project">Proyek</a></li>
+                        <li><a href="#education">Pendidikan</a></li>
+                        <li><a href="#experience">Pengalaman</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+            <div class="kaki">
+                <p>Dibuat oleh <a href="https://www.instagram.com/jarrs_ap/">Muhamad Fajar Ananda Pratama</a>, menggunakan
+                    HTML, CSS, dan JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const backgroundMusic = document.querySelector("#background-music");
+        const musicToggle = document.querySelector(".music-toggle");
+        const musicIcon = musicToggle.querySelector("img");
+        const musicResumeKey = "portfolio-music-resume";
+        let resumeMusicAfterReturn = false;
+
+        const updateMusicToggle = () => {
+            const isPlaying = !backgroundMusic.paused;
+            musicIcon.src = isPlaying ? "Assets/volume-up.png" : "Assets/volume-down.png";
+            musicToggle.setAttribute("aria-label", isPlaying ? "Matikan musik" : "Putar musik");
+            musicToggle.title = isPlaying ? "Matikan musik" : "Putar musik";
+        };
+
+        musicIcon.addEventListener("animationend", () => {
+            musicToggle.classList.remove("is-muting");
+        });
+
+        const jiggleMusicToggle = () => {
+            musicToggle.classList.remove("is-muting");
+            void musicIcon.offsetWidth;
+            musicToggle.classList.add("is-muting");
+        };
+
+        const resumeMusicOnInteraction = (event) => {
+            if (musicToggle.contains(event.target)) return;
+            backgroundMusic.play().catch(() => {
+                musicToggle.title = "Tekan untuk memutar musik";
+            });
+        };
+
+        backgroundMusic.addEventListener("play", () => {
+            updateMusicToggle();
+            sessionStorage.setItem(musicResumeKey, "true");
+            document.removeEventListener("pointerdown", resumeMusicOnInteraction);
+            document.removeEventListener("keydown", resumeMusicOnInteraction);
+        });
+        backgroundMusic.addEventListener("pause", updateMusicToggle);
+        backgroundMusic.addEventListener("ended", updateMusicToggle);
+        backgroundMusic.addEventListener("error", () => {
+            musicToggle.title = "Audio tidak dapat dimuat";
+            musicToggle.setAttribute("aria-label", "Audio tidak dapat dimuat");
+        });
+
+        musicToggle.addEventListener("click", () => {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play()
+                    .then(jiggleMusicToggle)
+                    .catch(() => {
+                        musicToggle.title = "Audio tidak dapat diputar";
+                    });
+            } else {
+                sessionStorage.removeItem(musicResumeKey);
+                backgroundMusic.pause();
+                jiggleMusicToggle();
+            }
+        });
+
+        backgroundMusic.play().catch(() => {
+            musicToggle.title = "Tekan untuk memutar musik";
+        });
+        document.addEventListener("pointerdown", resumeMusicOnInteraction);
+        document.addEventListener("keydown", resumeMusicOnInteraction);
+
+        window.addEventListener("pagehide", () => {
+            resumeMusicAfterReturn = !backgroundMusic.paused;
+            if (resumeMusicAfterReturn) {
+                sessionStorage.setItem(musicResumeKey, "true");
+                backgroundMusic.pause();
+            } else {
+                sessionStorage.removeItem(musicResumeKey);
+            }
+        });
+
+        window.addEventListener("pageshow", () => {
+            updateMusicToggle();
+            musicToggle.disabled = false;
+            musicToggle.classList.remove("is-muting");
+            const shouldResume = resumeMusicAfterReturn ||
+                sessionStorage.getItem(musicResumeKey) === "true";
+
+            resumeMusicAfterReturn = false;
+            sessionStorage.removeItem(musicResumeKey);
+            if (!shouldResume) return;
+
+            backgroundMusic.play().catch(() => {
+                musicToggle.title = "Tekan untuk melanjutkan musik";
+            });
+        });
+
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const mobileMenuList = mobileMenu.querySelector("ul");
+
+        mobileMenu.addEventListener("toggle", () => {
+            mobileMenuList.classList.remove("is-opening");
+            if (mobileMenu.open) {
+                void mobileMenuList.offsetWidth;
+                mobileMenuList.classList.add("is-opening");
+            }
+        });
+
+        document.querySelectorAll(".mobile-menu a").forEach((link) => {
+            link.addEventListener("click", (event) => {
+                const target = document.querySelector(link.getAttribute("href"));
+                if (!target) return;
+
+                event.preventDefault();
+                link.closest(".mobile-menu").open = false;
+                history.pushState(null, "", link.getAttribute("href"));
+                target.scrollIntoView({
+                    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+                });
+            });
+        });
+
+        const photoSlides = [
+            {
+                src: "Assets/南カリマンタン_page-0002.jpg",
+                alt: "Foto fotografi, halaman 2"
+            },
+            {
+                src: "Assets/南カリマンタン_page-0003.jpg",
+                alt: "Foto fotografi, halaman 3"
+            },
+            {
+                src: "Assets/南カリマンタン_page-0004.jpg",
+                alt: "Foto fotografi, halaman 4"
+            },
+            {
+                src: "Assets/南カリマンタン_page-0008.jpg",
+                alt: "Foto fotografi, halaman 8"
+            },
+            {
+                src: "Assets/color_match_20260519152909049.jpg",
+                alt: "Foto color match"
+            }
+        ];
+        const photoCarousel = document.querySelector(".photo-carousel");
+        const photoImage = photoCarousel.querySelector(".photo-carousel-slide img");
+        const photoCount = photoCarousel.querySelector(".photo-carousel-count");
+        let currentPhotoIndex = 0;
+        let isChangingPhoto = false;
+
+        photoCarousel.querySelectorAll("[data-photo-direction]").forEach((button) => {
+            button.addEventListener("click", async () => {
+                if (isChangingPhoto) return;
+
+                isChangingPhoto = true;
+                const buttons = photoCarousel.querySelectorAll("[data-photo-direction]");
+                buttons.forEach((carouselButton) => {
+                    carouselButton.disabled = true;
+                });
+
+                const direction = Number(button.dataset.photoDirection);
+                const nextPhotoIndex = (currentPhotoIndex + direction + photoSlides.length) % photoSlides.length;
+                const nextPhoto = photoSlides[nextPhotoIndex];
+                const preloadedImage = new Image();
+                preloadedImage.src = nextPhoto.src;
+
+                try {
+                    await preloadedImage.decode();
+
+                    currentPhotoIndex = nextPhotoIndex;
+                    photoImage.classList.remove("slide-in-from-left", "slide-in-from-right");
+                    photoImage.src = nextPhoto.src;
+                    photoImage.alt = nextPhoto.alt;
+                    photoCount.textContent = `${currentPhotoIndex + 1} / ${photoSlides.length}`;
+                    void photoImage.offsetWidth;
+                    photoImage.classList.add(direction > 0 ? "slide-in-from-right" : "slide-in-from-left");
+                } catch (error) {
+                    console.error(`Gagal memuat foto galeri: ${nextPhoto.src}`, error);
+                    photoCount.textContent = "Foto gagal dimuat";
+                } finally {
+                    buttons.forEach((carouselButton) => {
+                        carouselButton.disabled = false;
+                    });
+                    isChangingPhoto = false;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
