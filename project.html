@@ -39,6 +39,13 @@
     <hr>
     <audio id="background-music" src="Assets/TULUS - Monokrom (Official Music Video).mp3" loop preload="auto"></audio>
     <div class="music-control-row">
+        <button class="theme-toggle" type="button" aria-label="Aktifkan mode gelap" aria-pressed="false" title="Aktifkan mode gelap">
+            <span class="theme-toggle-track" aria-hidden="true">
+                <span class="theme-toggle-thumb">
+                    <img src="Assets/night-mode.png" alt="">
+                </span>
+            </span>
+        </button>
         <button class="music-toggle" type="button" aria-label="Putar musik" title="Putar musik">
             <img src="Assets/volume-down.png" alt="">
         </button>
@@ -235,6 +242,36 @@
 
 
     <script>
+        const themeToggle = document.querySelector(".theme-toggle");
+        const themeIcon = themeToggle.querySelector("img");
+        const themeStorageKey = "portfolio-theme";
+
+        const applyTheme = (isDarkMode) => {
+            document.body.classList.toggle("dark-mode", isDarkMode);
+            themeIcon.src = isDarkMode ? "Assets/sleep-mode.png" : "Assets/night-mode.png";
+            themeToggle.setAttribute("aria-pressed", String(isDarkMode));
+            const label = isDarkMode ? "Aktifkan mode terang" : "Aktifkan mode gelap";
+            themeToggle.setAttribute("aria-label", label);
+            themeToggle.title = label;
+        };
+
+        try {
+            applyTheme(window.localStorage.getItem(themeStorageKey) === "dark");
+        } catch (error) {
+            console.error("Preferensi tema tidak dapat dibaca.", error);
+            applyTheme(false);
+        }
+
+        themeToggle.addEventListener("click", () => {
+            const isDarkMode = !document.body.classList.contains("dark-mode");
+            applyTheme(isDarkMode);
+            try {
+                window.localStorage.setItem(themeStorageKey, isDarkMode ? "dark" : "light");
+            } catch (error) {
+                console.error("Preferensi tema tidak dapat disimpan.", error);
+            }
+        });
+
         const backgroundMusic = document.querySelector("#background-music");
         const musicToggle = document.querySelector(".music-toggle");
         const musicIcon = musicToggle.querySelector("img");
