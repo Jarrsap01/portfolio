@@ -563,6 +563,10 @@ body {
     object-fit: contain;
 }
 
+body.dark-mode .music-toggle img {
+    filter: invert(1);
+}
+
 .music-toggle.is-muting img {
     animation: speakerJiggle 450ms ease-in-out;
 }
