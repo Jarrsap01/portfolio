@@ -564,7 +564,7 @@ body {
 }
 
 body.dark-mode .music-toggle img {
-    filter: invert(1);
+    filter: brightness(0) invert(1);
 }
 
 .music-toggle.is-muting img {
